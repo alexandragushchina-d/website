@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de" manifest="your-manifest-file">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/standard.css?id=1234"/> 
+    <link rel="icon" type="image/x-icon" href="./image/favicon.jpg">
+    <script src="js/home_slideshow.js"></script>
+    <script src="js/home_login.js"></script>
+    <title>Naturschutzgebiete der Welt</title>
+  </head>
+
+  <body onload="changeImage();">
+    <header>
+      <div class="navbar">
+
+        <div class="dropdown-menu-logo">
+          <a href = "./index.html">
+            <picture>
+              <img src="./image/logo.jpg" alt="Logo" width="140" height="100">
+            </picture>
+          </a>  
+        </div>
+
+        <div class="dropdown-menu">
+          <a aria-current="page" title="Startseite">Startseite</a>
+          <div class="dropdown">
+            <button class="dropdown-button">
+              Naturschutzgebiete
+            </button>
+
+            <div class="dropdown-content">
+              <a href="costa_rica.html" title="Costa Rica"><img src="image/flag/costa-rican-flag.jpg"
+                width="25" height="20" style="padding-right:7px;">Regenwald in Costa Rica</a>
+              <a href="sri_lanka.html" title="Sri Lanka"><img src="image/flag/sri-lankan-flag.jpg"
+                width="25" height="20" style="padding-right:7px;">Natur in Sri Lanka</a>
+              <a href="neuseeland.html" title="Neuseeland"><img src="image/flag/new-zealander-flag.jpg"
+                width="25" height="20" style="padding-right:7px;">Fiordland in Neuseeland</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-button">Aktuelles</button>
+            <div class="dropdown-content">
+              <a href="lebenslauf.html" title="Über mich">Über mich</a>
+              <a href="feedback.html" title="Feedback">Feedback</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+      <div class="login_container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" id="email" placeholder=" Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="password" placeholder=" Enter Password" name="psw" required>
+    
+        <button id="submit" class="login_button" onclick="validate();">Login</button>
+
+
+        <a href="reset_psw.html" title="Reset Password">Forgot Password?</a><br>
+        <hr>
+        <a href="sign_up.html" title="Create">Create an account</a>
+        </div>
+
+      <img id="home_img" src="" style="height:810px; width:1440px;"/>
+    
+       
+  </body>
+</html>

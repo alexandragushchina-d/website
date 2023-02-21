@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown-menu-logo {
+  background: white url("../image/logo.jpg") 0px 0px no-repeat;
+  width:156px;
+  height: 100px;
+  border: 15px solid transparent; font: 0/0 a; text-shadow: none; color: white;
+  float: left;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropdown-button {
+  font-size: 16px;  
+  height: 4em;
+  line-height: 4em;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-menu a {
+  height: 4em;
+  line-height: 4em;
+}
+
+.navbar a:hover, .dropdown:hover .dropdown-button {
+  background-color:  #e9e8c8;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+}
+
+.dropdown-content a {
+  float: none;
+  font-family: Glober, sans-serif;
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/*Login Container*/
+
+.login_container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+input[name=email], input[name=psw] {
+  width: 100%;
+  padding: 15px 10px 15px 0;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.login_button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.login_button:hover {
+  opacity: 1;
+}
+
+/* Images for Costa Rica */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 30px;
+}
+
+
+/* Next stylesheet for Sri Lanka */
+
+.slideshow {
+  position: relative;
+}
+
+.slides {
+  display: none;
+  padding-left: 550px;
+}
+
+/* Next & previous buttons in slideshow */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.number {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+
+.slideshow-container {
+  text-align: center;
+  background-color:black;
+  padding: 16px 16px;
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.row_srilanka:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column_srilanka {
+  float: left;
+  width: 16.66%;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+.preview_img {
+  opacity: 0.6;
+}
+
+.active,
+.preview_img:hover {
+  opacity: 1;
+}
+
+
+/* Images for New Zealand */
+.scroll {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sub-menu {
+  width: 400px;
+}

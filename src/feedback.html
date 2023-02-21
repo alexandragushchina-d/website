@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de" manifest="your-manifest-file">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        h1 {text-align: center;}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/standard.css?id=1234"/> 
+    <link rel="icon" type="image/x-icon" href="./image/favicon.jpg">
+    <title>Feedback</title>
+  </head>
+
+  <body style="background-color:hsl(120, 20%, 75%);">
+    <h1>Feedback</h1>
+    <header>
+      <form method="post" action="process.php">
+        <fieldset>
+          <legend>Pesönliche Angaben</legend>
+          <p>
+            <label>Vorname</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Nachname</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Wohnland</label>
+            <select name="woher">
+              <option>Wählen Sie eine Welt aus</option>
+              <option>Erde</option>
+              <option>Merkur</option>
+              <option>Venus</option>
+              <option>Mars</option>
+              <option>Pluto</option>
+            </select>
+          </p>
+          <p>
+            <label>Geburtsdatum</label>
+            <input type="date" name="birthday">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Bewertung der Webseite</legend>
+          <p>
+            <label>Wie gefällt Ihnen das Thema der Webseite?</label><br>
+            <input type="radio" name="answer" checked>
+            <label for="answer">Ja, ich freue mich auf Weiteres.</label><br>
+            <input type="radio" name="answer">
+            <label for="answer">Nein, langweilig.</label><br>
+            <input type="radio" name="answer">
+            <label for="answer">Keine Ahnung.</label>
+          </p>
+          <p>
+            <label>Welche Naturschutzgebiete haben Ihnen am besten gefallen?</label><br>
+            <input type="checkbox" name="costa_rica">
+            <label for="costa_rica">Regenwald in Costa Rica.</label><br>
+            <input type="checkbox" name="sri_lanka">
+            <label for="sri_lanka">Natur in Sri Lanka.</label><br>
+            <input type="checkbox" name="neuseeland">
+            <label for="neuseeland">Fiordland in Neuseeland.</label>
+          </p>
+          <label>Kommentare:</label><br>
+          <textarea placeholder="Enter Comment" id="comment" name="comment" rows="4" cols="50" maxlength="200"></textarea>
+        </fieldset>
+      </form>
+
+      <form method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Zusätzliche Dateien</legend>
+          <label>Laden Sie bitte maximal 3 Bilder aus diesen Ländern herunter:</label><br>
+
+          <input type="file" value="photo"><br>
+          Extrem<input type="range" min="0" max="10" step="1" name="bild">Romantisch<br>
+
+          <input type="file" value="photo"><br>
+          Extrem<input type="range" min="0" max="10" step="1" name="bild">Romantisch<br>
+
+          <input type="file" value="photo"><br>
+          Extrem<input type="range" min="0" max="10" step="1" name="bild">Romantisch
+        </fieldset>
+      </form>
+
+      <br />
+      <input type="submit" value="Absenden"/>
+      <input type="reset" value="Löschen">
+      <br />
+    </header>
+    
+    <hr>
+    <a href="index.html"> Zurück zur Startseite</a>
+
+  </body>
+</html>
